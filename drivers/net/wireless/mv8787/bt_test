@@ -1,0 +1,8 @@
+#!/bin/sh
+    date1=$(date +%H:%M:%S)
+    echo 'date1:'$date1
+    insmod /system/lib/modules/bt8787.ko
+    date2=$(date +%H:%M:%S)
+    echo 'date2:'$date2
+    rmmod bt8xxx
+    echo $i
